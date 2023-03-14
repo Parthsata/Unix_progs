@@ -1,4 +1,4 @@
-// prime number or not
+1 // prime number or not
 
 #!/bin/bash
 echo -e "Enter Number : \c"
@@ -17,7 +17,7 @@ done
 done
 echo "$n is a prime number."
 
-// half pyramid
+2 // half pyramid
 rows=5
 for((i=rows; i>=1; i--))
 do
@@ -28,7 +28,7 @@ do
   echo
 done
 
-// factorial in unix
+3 // factorial in unix
 
 echo "Enter a number"
 read num
@@ -41,7 +41,7 @@ do
   num=$((num - 1))      #num = num - 1
 done
 
-// transpose matrix
+4 // transpose matrix
 
 #!/bin/bash
 matrix1=(1 2 3 4 5 6 7 8 9)
@@ -82,7 +82,7 @@ do
 done
 
 
-// palingdrom
+5 // palingdrom
 
 
 #!/bin/bash
@@ -105,7 +105,7 @@ echo not palindrome
 fi
 
 
-// sum of digits
+6 // sum of digits
 
 #!/bin/bash
 echo "Enter a number"
@@ -121,3 +121,37 @@ do
 done
 
 echo $sum
+
+7 // remove duplicate lines
+sort bb1.txt | uniq
+
+8 // append two files
+cat bb1.txt >> brijesh //bb1 data move to brijesh
+
+9 // find number of files and directory
+  ls -l
+  
+ 10 // print inverted half pyramid using number
+ #!/bin/bash
+number=1
+rows=5
+for((i=rows; i>=1; i--))
+do
+  for((j=1; j<=i; j++))
+  do
+    echo -n "$number "
+    number=$((number + 1))
+  done
+  number=1
+  echo
+done
+
+11 // check whether you are root or not
+#!/bin/bash
+if [ $UID = 0 ] ; then
+ echo Im root
+ else
+ echo not root
+ fi
+  
+
