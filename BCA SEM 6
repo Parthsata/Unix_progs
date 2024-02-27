@@ -1,0 +1,28 @@
+# PYTHON CRUD 
+import mysql.connector
+
+db = mysql.connector.connect(host="localhost", user="root", password="", database="demo")
+c = db.cursor()
+
+# c.execute("create database Demo")
+# c.execute("show Databases")
+#
+# print("database Created Successfully")
+# for i in c:
+#     print(i)
+# c.execute("DROP TABLE IF EXISTS DEMO")
+# Table = "CREATE TABLE DEMO(ID INT NOT NULL , NAME TEXT(50), PRIMARY KEY(ID))"
+# c.execute("insert into demo VALUES (1,'Parth')")
+# print("Data Inserted")
+# db.commit() #db commit is imporatant to insert table in table
+# # c.execute(Table)
+#
+# c.execute("update demo set Name='Brijesh' where ID =1 ")
+# print("Data Updated")
+
+c.execute("delete from demo where id=1")
+print("data deleted")
+
+db.commit()
+c = db.cursor()
+db.close()
